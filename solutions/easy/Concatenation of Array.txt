@@ -1,0 +1,17 @@
+// Title: Concatenation of Array
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/concatenation-of-array/
+
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        n=len(nums)
+        m=2*n
+        ans=[]
+        for i in range(m):
+            ans.append(nums[i % n])
+
+
+
+        return ans    
+        
+class Solution:
