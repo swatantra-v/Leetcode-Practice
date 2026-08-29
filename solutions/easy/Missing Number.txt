@@ -1,0 +1,15 @@
+// Title: Missing Number
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/missing-number/
+
+    def missingNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        for i in range(len(nums)):
+            if nums[i]!=i:
+                return i
+            
+
+        return len(nums)    
+class Solution:
+                
