@@ -1,0 +1,13 @@
+// Title: Plus One
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/plus-one/
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        number=int(''.join(map(str, digits)))
+
+        number = number +1
+        return list(map(int, str(number)))
+
+            
