@@ -1,0 +1,11 @@
+// Title: Minimum Size Subarray Sum
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-size-subarray-sum/
+
+                left+=1
+            right+=1
+        if minm!=float('inf'):
+            return minm
+        else:
+            return 0    
