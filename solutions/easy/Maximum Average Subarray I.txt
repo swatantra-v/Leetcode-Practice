@@ -1,0 +1,18 @@
+// Title: Maximum Average Subarray I
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/maximum-average-subarray-i/
+
+        while right<len(nums)-1:
+            left+=1
+        maxs=sums
+        right=k-1
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        left=0
+            right+=1
+        sums=sum(nums[left:right+1])
+        return maxs/k    
+            
+            sums=sums-nums[left-1]+nums[right]
+            maxs=max(maxs,sums)
+
