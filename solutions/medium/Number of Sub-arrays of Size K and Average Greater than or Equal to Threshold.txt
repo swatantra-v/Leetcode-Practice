@@ -1,0 +1,18 @@
+// Title: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/
+
+        while right<len(arr)-1:
+            left+=1
+            right+=1
+            
+            sums=sums-arr[left-1]+arr[right]
+        sums=sum(arr[left:right+1])
+        checks=k*threshold
+        count=0
+        if sums>=checks:
+            count+=1
+    def numOfSubarrays(self, arr: List[int], k: int, threshold: int) -> int:
+        left=0
+        right=k-1
