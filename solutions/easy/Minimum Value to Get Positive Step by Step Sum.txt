@@ -1,0 +1,16 @@
+// Title: Minimum Value to Get Positive Step by Step Sum
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
+
+
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+        startvalue = 0
+        sums =0
+
+        for i in range(len(nums)):
+            sums+=nums[i]
+            startvalue=min(startvalue,sums)
+        return 1-startvalue    
+        
