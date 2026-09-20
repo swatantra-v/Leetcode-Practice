@@ -1,0 +1,18 @@
+// Title: Maximum Product Subarray
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/maximum-product-subarray/
+
+            v1 = curr_max_product * nums[i]
+            v2 = minimum_product * nums[i]
+            v3 = nums[i]
+
+        global_product = nums[0]
+
+        for i in range(1, len(nums)):
+            curr_max_product = max(v1, v2, v3)
+            minimum_product = min(v1, v2, v3)
+        minimum_product = nums[0]
+    def maxProduct(self, nums: list[int]) -> int:
+        curr_max_product = nums[0]
+class Solution:
