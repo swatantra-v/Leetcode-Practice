@@ -1,0 +1,11 @@
+// Title: Remove All Occurrences of a Substring
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/remove-all-occurrences-of-a-substring/
+
+class Solution:
+    def removeOccurrences(self, s: str, part: str) -> str:
+        while part in s:
+            s = s.replace(part, '', 1)
+        return s
+        
